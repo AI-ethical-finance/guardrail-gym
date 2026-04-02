@@ -1,0 +1,14 @@
+domain: healthcare
+jurisdiction:
+  - US
+  - EU
+user_vulnerability: high
+data_sensitivity: phi
+autonomy: advisory
+actionability: decision_adjacent
+model_type: rag
+retrieval: true
+memory: true
+human_review: false
+tool_access:
+  - ehr_lookup

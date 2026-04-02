@@ -1,0 +1,32 @@
+search_name: healthcare-strict-demo
+environment_name: healthcare_strict
+candidate_models:
+  - gpt-5.4
+  - claude-sonnet-4.6
+  - gemini-3.1-pro
+  - llama-4-maverick
+  - gpt-5.4-mini
+allowed_controls:
+  - regex_denylist
+  - schema_validator
+  - phi_detector
+  - medical_urgency_classifier
+  - policy_compliance_judge
+  - grounding_judge
+  - policy_graph_router
+  - tool_approval_graph
+  - adaptive_risk_controller
+  - human_escalation_gate
+  - audit_logger
+population_size: 20
+generations: 8
+mutation_rate: 0.25
+crossover_rate: 0.60
+objective_weights:
+  safety: 0.35
+  compliance: 0.25
+  utility: 0.10
+  auditability: 0.15
+  latency: 0.10
+  cost: 0.05
+seed: 7
