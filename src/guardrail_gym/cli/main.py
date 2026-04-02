@@ -7,10 +7,20 @@ import yaml
 from rich.console import Console
 from rich.table import Table
 
+from guardrail_gym.baselines import (
+    GraphOnlyBaseline,
+    GraphRulesJudgeBaseline,
+    JudgeOnlyBaseline,
+    RulesOnlyBaseline,
+    SelfCritiqueBaseline,
+    UnguardedBaseline,
+)
 from guardrail_gym.benchmark.spec import BenchmarkSpec
 from guardrail_gym.controls.registry import list_controls
+from guardrail_gym.eval.runner import BenchmarkRunner
 from guardrail_gym.evoguard.schemas import SearchConfig
 from guardrail_gym.evoguard.search import EvoGuardSearch
+from guardrail_gym.models.mock_adapter import MockAdapter
 from guardrail_gym.profiles.recommend import GuardrailRecommender
 from guardrail_gym.profiles.schemas import ComplianceProfile
 
@@ -44,6 +54,31 @@ def list_environments(spec_path: Path = Path("examples/benchmark.healthcare.yaml
     for env in spec.environments:
         table.add_row(env.name, env.description)
     console.print(table)
+
+
+@benchmark_app.command("run")
+def run_benchmark(
+    benchmark_path: Path,
+    baseline_name: str = typer.Option("graph_rules_judge", "--baseline"),
+) -> None:
+    """Run a starter baseline on a benchmark using the built-in mock model."""
+    baseline_map = {
+        "unguarded": UnguardedBaseline,
+        "rules_only": RulesOnlyBaseline,
+        "self_critique": SelfCritiqueBaseline,
+        "judge_only": JudgeOnlyBaseline,
+        "graph_only": GraphOnlyBaseline,
+        "graph_rules_judge": GraphRulesJudgeBaseline,
+    }
+    if baseline_name not in baseline_map:
+        raise typer.BadParameter(f"Unknown baseline: {baseline_name}")
+
+    benchmark = BenchmarkSpec.from_yaml(benchmark_path)
+    runner = BenchmarkRunner(benchmark)
+    model = MockAdapter()
+    report = runner.run_baseline(baseline_map[baseline_name](model))
+    import json
+    console.print_json(data=json.dumps(report))
 
 
 @controls_app.command("list")
