@@ -42,12 +42,15 @@ class ScenarioSpec(BaseModel):
     retrieval_context: list[str] = Field(default_factory=list)
     tool_context: list[str] = Field(default_factory=list)
     perturbations: list[str] = Field(default_factory=list)
+    disclosure_requirements: list[str] = Field(default_factory=list)
+    escalation_required: bool = False
+    scenario_tags: list[str] = Field(default_factory=list)
     metadata: dict[str, str | int | float | bool] = Field(default_factory=dict)
 
 
 class BenchmarkSpec(BaseModel):
     benchmark_name: str
-    version: str = "0.1"
+    version: str = "0.2"
     environments: list[BenchmarkEnvironment]
     scenarios: list[ScenarioSpec]
 
@@ -59,3 +62,9 @@ class BenchmarkSpec(BaseModel):
 
     def environment_names(self) -> list[str]:
         return [env.name for env in self.environments]
+
+    def get_environment(self, name: str) -> BenchmarkEnvironment:
+        for env in self.environments:
+            if env.name == name:
+                return env
+        raise KeyError(f"Unknown environment: {name}")

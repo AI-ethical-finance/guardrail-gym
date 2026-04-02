@@ -1,6 +1,3 @@
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![License](https://img.shields.io/badge/license-Apache%202.0-green)
-![Status](https://img.shields.io/badge/status-research-orange)
 # guardrail-gym
 
 `guardrail-gym` is a GitHub-ready, pip-installable Python package for **designing, benchmarking, and evolving conversational guardrail stacks** for regulated and high-stakes deployments.
@@ -158,3 +155,22 @@ This scaffold does **not** include proprietary model adapters, real medical or f
 ## License
 
 MIT
+
+
+## Expanded benchmark layer
+
+This repo now includes a second benchmark layer for primitive-level analysis:
+
+```bash
+python scripts/run_isolation.py
+python scripts/run_complementarity.py
+```
+
+Or via the CLI:
+
+```bash
+guardrail-gym benchmark run-isolation examples/benchmark.expanded.yaml --environment-name healthcare_strict
+guardrail-gym benchmark run-complementarity examples/benchmark.expanded.yaml --environment-name finance_consumer
+```
+
+Outputs are written to `results/` as both JSON and CSV.

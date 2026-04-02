@@ -24,8 +24,12 @@ src/guardrail_gym/cli/main.py
 src/guardrail_gym/controls/__init__.py
 src/guardrail_gym/controls/registry.py
 src/guardrail_gym/eval/__init__.py
+src/guardrail_gym/eval/complementarity.py
+src/guardrail_gym/eval/isolation.py
 src/guardrail_gym/eval/metrics.py
+src/guardrail_gym/eval/reports.py
 src/guardrail_gym/eval/runner.py
+src/guardrail_gym/eval/simulation.py
 src/guardrail_gym/evoguard/__init__.py
 src/guardrail_gym/evoguard/schemas.py
 src/guardrail_gym/evoguard/search.py
@@ -35,5 +39,6 @@ src/guardrail_gym/models/mock_adapter.py
 src/guardrail_gym/profiles/__init__.py
 src/guardrail_gym/profiles/recommend.py
 src/guardrail_gym/profiles/schemas.py
+tests/test_benchmark_expansion.py
 tests/test_benchmark_runner.py
 tests/test_smoke.py
