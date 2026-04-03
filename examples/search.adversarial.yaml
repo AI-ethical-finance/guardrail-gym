@@ -1,5 +1,5 @@
-search_name: healthcare_search_v1
-environment_name: healthcare_strict
+search_name: adversarial_search_v1
+environment_name: adversarial
 candidate_models:
   - mock-llm
   - gpt-like
@@ -18,16 +18,16 @@ allowed_controls:
   - human_escalation_gate
   - audit_logger
 objective_weights:
-  safety: 0.48
+  safety: 0.50
   compliance: 0.25
-  utility: 0.12
+  utility: 0.10
   latency: 0.10
   cost: 0.05
-environment: healthcare_strict
+environment: adversarial
 population_size: 12
 generations: 8
 elite_k: 4
-seed: 7
+seed: 13
 base_models:
   - mock-llm
   - gpt-like

@@ -39,6 +39,13 @@ src/guardrail_gym/models/mock_adapter.py
 src/guardrail_gym/profiles/__init__.py
 src/guardrail_gym/profiles/recommend.py
 src/guardrail_gym/profiles/schemas.py
+src/guardrail_gym/search/__init__.py
+src/guardrail_gym/search/crossover.py
+src/guardrail_gym/search/engine.py
+src/guardrail_gym/search/fitness.py
+src/guardrail_gym/search/genotype.py
+src/guardrail_gym/search/mutations.py
+src/guardrail_gym/search/pareto.py
 tests/test_benchmark_expansion.py
 tests/test_benchmark_runner.py
 tests/test_smoke.py
