@@ -16,7 +16,7 @@ def _score_stack(benchmark: BenchmarkSpec, environment_name: str, controls: list
             continue
         bundles.append(simulate_stack_metrics(scenario, environment, controls))
     agg = aggregate_metric_bundles(bundles)
-    payload = agg.model_dump()
+    payload = agg.model_dump() if hasattr(agg, "model_dump") else agg
     payload["objective"] = weighted_objective(agg, environment.metric_weights)
     return payload
 

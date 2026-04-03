@@ -23,7 +23,7 @@ def run_isolation_study(benchmark: BenchmarkSpec, environment_name: str) -> list
                 "environment": environment_name,
                 "control": control_key,
                 "stack_size": len(stack),
-                **agg.model_dump(),
+                **(agg.model_dump() if hasattr(agg, "model_dump") else agg),
                 "objective": weighted_objective(agg, environment.metric_weights),
             }
         )

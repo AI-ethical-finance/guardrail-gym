@@ -36,7 +36,7 @@ class BenchmarkRunner:
                     "baseline": baseline.name,
                     "output_text": result.output_text,
                     "trace": result.trace,
-                    "metrics": evaluation.model_dump(),
+                    "metrics": evaluation.model_dump() if hasattr(evaluation, "model_dump") else evaluation,
                 }
             )
         summary = RunnerSummary(
