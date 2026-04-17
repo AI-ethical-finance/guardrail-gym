@@ -1,0 +1,17 @@
+version: "0.1"
+
+layers:
+  - key: input_detection
+    description: Detect risk before generation.
+  - key: semantic_interpretation
+    description: Classify context, vulnerability, intent, and domain.
+  - key: routing_constraint
+    description: Route conversation into a policy-safe path.
+  - key: generation
+    description: Base model generation layer.
+  - key: output_verification
+    description: Judge, verify, and validate generated output.
+  - key: escalation
+    description: Restrict, hand off, or escalate.
+  - key: audit_monitoring
+    description: Log, monitor, and support post-hoc accountability.

@@ -15,6 +15,8 @@ from guardrail_gym.search.mutations import (
     mutate_remove_control,
     mutate_threshold,
     mutate_topology,
+    mutate_layer,
+    mutate_activation,
 )
 from guardrail_gym.search.pareto import pareto_front
 
@@ -48,25 +50,33 @@ class EvoGuardSearchEngine:
         k = random.randint(0, min(4, len(self.available_controls)))
         controls = sorted(random.sample(self.available_controls, k=k)) if k > 0 else []
         thresholds = {c: round(random.uniform(0.4, 0.9), 2) for c in controls}
+        control_layers = {c: random.choice(["input_detection", "semantic_interpretation", "routing_constraint", "output_verification", "escalation", "audit_monitoring"]) for c in controls}
+        activation_conditions = {c: random.choice(["always_on", "triggered", "healthcare_only", "finance_only"]) for c in controls}
         topology = random.choice(["linear", "gated", "branching"])
         return Genotype(
             base_model=random.choice(self.base_models),
             controls=controls,
             thresholds=thresholds,
             topology=topology,
+            control_layers=control_layers,
+            activation_conditions=activation_conditions,
         )
 
     def initial_population(self) -> list[Genotype]:
         return [self.random_genotype() for _ in range(self.population_size)]
 
     def mutate(self, genotype: Genotype) -> Genotype:
-        op = random.choice(["add", "remove", "threshold", "topology"])
+        op = random.choice(["add", "remove", "threshold", "topology", "layer", "activation"])
         if op == "add":
             return mutate_add_control(genotype, self.available_controls)
         if op == "remove":
             return mutate_remove_control(genotype)
         if op == "threshold":
             return mutate_threshold(genotype)
+        if op == "layer":
+            return mutate_layer(genotype)
+        if op == "activation":
+            return mutate_activation(genotype)
         return mutate_topology(genotype)
 
     def _score_population(self, population: list[Genotype]) -> list[dict]:

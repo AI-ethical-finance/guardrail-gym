@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import random
 
+from guardrail_gym.search.control_catalog import control_default_layer
 from guardrail_gym.search.genotype import Genotype
+
 
 def crossover(a: Genotype, b: Genotype) -> Genotype:
     merged = sorted(set(a.controls + b.controls))
@@ -11,7 +13,11 @@ def crossover(a: Genotype, b: Genotype) -> Genotype:
         controls = sorted(random.sample(merged, k=k))
     else:
         controls = []
+
     thresholds = {}
+    control_layers = {}
+    activation_conditions = {}
+
     for c in controls:
         if c in a.thresholds and c in b.thresholds:
             thresholds[c] = round((a.thresholds[c] + b.thresholds[c]) / 2.0, 2)
@@ -21,9 +27,22 @@ def crossover(a: Genotype, b: Genotype) -> Genotype:
             thresholds[c] = b.thresholds[c]
         else:
             thresholds[c] = 0.6
+
+        control_layers[c] = random.choice([
+            a.control_layers.get(c, control_default_layer(c)),
+            b.control_layers.get(c, control_default_layer(c)),
+        ])
+
+        activation_conditions[c] = random.choice([
+            a.activation_conditions.get(c, "always_on"),
+            b.activation_conditions.get(c, "always_on"),
+        ])
+
     return Genotype(
         base_model=random.choice([a.base_model, b.base_model]),
         controls=controls,
         thresholds=thresholds,
         topology=random.choice([a.topology, b.topology]),
+        control_layers=control_layers,
+        activation_conditions=activation_conditions,
     )

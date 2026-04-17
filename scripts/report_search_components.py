@@ -23,6 +23,8 @@ def main():
         print("environment:", payload["environment"])
         print("model:", best["genotype"]["base_model"])
         print("controls:", best["genotype"]["controls"])
+        print("control_layers:", best["genotype"].get("control_layers"))
+        print("activation_conditions:", best["genotype"].get("activation_conditions"))
         print("objective:", best["objective"])
         print("safety:", best.get("safety"))
         print("compliance:", best.get("compliance"))
