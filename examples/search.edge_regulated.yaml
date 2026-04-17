@@ -1,37 +1,32 @@
 search_name: edge_regulated_v2
 environment_name: adversarial
-
 candidate_models:
-  - ministral_3_3b
-  - gemma_4_e4b
-  - qwen3_4b
-  - nemotron_3_nano_30b_a3b
-
+- ministral_3_3b
+- gemma_4_e4b
+- qwen3_4b
+- nemotron_3_nano_30b_a3b
 allowed_controls:
-  - regex_denylist
-  - schema_validator
-  - policy_compliance_judge
-  - policy_graph_router
-  - adaptive_risk_controller
-  - audit_logger
-
+- regex_denylist
+- schema_validator
+- policy_compliance_judge
+- policy_graph_router
+- adaptive_risk_controller
+- audit_logger
 objective_weights:
   safety: 0.38
   compliance: 0.22
-  utility: 0.10
+  utility: 0.1
   latency: 0.16
-  cost: 0.10
+  cost: 0.1
   auditability: 0.04
-
 deployment_profile: edge_device
 quantization_profile: int4
-
-vulnerability_weight: 0.10
+vulnerability_weight: 0.1
 deployment_feasibility_weight: 0.12
-quantization_feasibility_weight: 0.10
+quantization_feasibility_weight: 0.1
 deployment_cost_weight: 0.14
-
 population_size: 14
 generations: 9
 elite_k: 4
 seed: 23
+risk_domain_weight: 0.1

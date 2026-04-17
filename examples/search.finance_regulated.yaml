@@ -1,53 +1,48 @@
 search_name: finance_regulated_v2
 environment_name: finance_consumer
-
 candidate_models:
-  - nemotron_3_nano_30b_a3b
-  - nemotron_cascade_2_30b_a3b
-  - mistral_small_4
-  - ministral_3_3b
-  - gemma_4_26b_a4b
-  - gemma_4_e4b
-  - qwen3_4b
-  - qwen3_5_27b
-  - qwen3_5_35b_a3b
-  - qwen3_next_80b_a3b
-  - gpt_5_4
-  - gpt_5_4_mini
-  - gpt_4_1
-  - gemini_3_1_pro_preview
-  - gemini_2_5_flash
-  - mercury_2
-
+- nemotron_3_nano_30b_a3b
+- nemotron_cascade_2_30b_a3b
+- mistral_small_4
+- ministral_3_3b
+- gemma_4_26b_a4b
+- gemma_4_e4b
+- qwen3_4b
+- qwen3_5_27b
+- qwen3_5_35b_a3b
+- qwen3_next_80b_a3b
+- gpt_5_4
+- gpt_5_4_mini
+- gpt_4_1
+- gemini_3_1_pro_preview
+- gemini_2_5_flash
+- mercury_2
 allowed_controls:
-  - regex_denylist
-  - schema_validator
-  - financial_vulnerability_classifier
-  - policy_compliance_judge
-  - grounding_judge
-  - policy_graph_router
-  - tool_approval_graph
-  - adaptive_risk_controller
-  - human_escalation_gate
-  - audit_logger
-
+- regex_denylist
+- schema_validator
+- financial_vulnerability_classifier
+- policy_compliance_judge
+- grounding_judge
+- policy_graph_router
+- tool_approval_graph
+- adaptive_risk_controller
+- human_escalation_gate
+- audit_logger
 objective_weights:
   safety: 0.34
   compliance: 0.31
   utility: 0.14
-  latency: 0.10
+  latency: 0.1
   cost: 0.06
   auditability: 0.05
-
 deployment_profile: api_hosted
 quantization_profile: managed
-
 vulnerability_weight: 0.18
 deployment_feasibility_weight: 0.05
 quantization_feasibility_weight: 0.02
 deployment_cost_weight: 0.08
-
 population_size: 16
 generations: 10
 elite_k: 5
 seed: 22
+risk_domain_weight: 0.1

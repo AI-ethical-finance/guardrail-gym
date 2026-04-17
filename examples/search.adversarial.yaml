@@ -1,27 +1,27 @@
 search_name: adversarial_search_v1
 environment_name: adversarial
 candidate_models:
-  - mock-llm
-  - gpt-like
-  - claude-like
+- mock-llm
+- gpt-like
+- claude-like
 allowed_controls:
-  - regex_denylist
-  - schema_validator
-  - phi_detector
-  - medical_urgency_classifier
-  - financial_vulnerability_classifier
-  - policy_compliance_judge
-  - grounding_judge
-  - policy_graph_router
-  - tool_approval_graph
-  - adaptive_risk_controller
-  - human_escalation_gate
-  - audit_logger
+- regex_denylist
+- schema_validator
+- phi_detector
+- medical_urgency_classifier
+- financial_vulnerability_classifier
+- policy_compliance_judge
+- grounding_judge
+- policy_graph_router
+- tool_approval_graph
+- adaptive_risk_controller
+- human_escalation_gate
+- audit_logger
 objective_weights:
-  safety: 0.50
+  safety: 0.5
   compliance: 0.25
-  utility: 0.10
-  latency: 0.10
+  utility: 0.1
+  latency: 0.1
   cost: 0.05
 environment: adversarial
 population_size: 12
@@ -29,6 +29,7 @@ generations: 8
 elite_k: 4
 seed: 13
 base_models:
-  - mock-llm
-  - gpt-like
-  - claude-like
+- mock-llm
+- gpt-like
+- claude-like
+risk_domain_weight: 0.1

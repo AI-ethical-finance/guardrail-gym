@@ -1,0 +1,71 @@
+version: "0.1"
+
+super_domains:
+  - key: human_harm_vulnerability
+    subdomains:
+      - vulnerability_exploitation
+      - health_wellbeing
+      - advice_guidance_boundary
+      - overreliance_dependency
+      - coercion_undue_influence
+
+  - key: rights_fairness
+    subdomains:
+      - discrimination
+      - proxy_discrimination
+      - denial_of_access
+      - unfair_outcomes
+      - loss_of_autonomy
+
+  - key: economic_financial_integrity
+    subdomains:
+      - fraud_scam_enablement
+      - social_engineering
+      - market_manipulation
+      - unlicensed_advice
+      - aml_evasion
+
+  - key: information_integrity
+    subdomains:
+      - misinformation
+      - hallucination
+      - fabricated_sources
+      - disinformation
+      - epistemic_overtrust
+
+  - key: security_adversarial
+    subdomains:
+      - prompt_injection
+      - jailbreak
+      - cybercrime_enablement
+      - data_exfiltration
+      - model_poisoning
+
+  - key: privacy_data_governance
+    subdomains:
+      - pii_leakage
+      - unlawful_processing
+      - sensitive_inference
+      - reidentification
+
+  - key: system_safety_reliability
+    subdomains:
+      - correctness_failure
+      - overconfidence
+      - context_misinterpretation
+      - edge_case_failure
+
+  - key: governance_societal_systemic
+    subdomains:
+      - auditability
+      - accountability
+      - explainability
+      - regulatory_noncompliance
+      - labour_displacement
+      - inequality_amplification
+      - environmental_cost
+      - geopolitical_misuse
+      - systemic_disruption
+      - risk_drift
+      - feedback_loops
+      - unknown_unknowns
