@@ -1,3 +1,9 @@
-from guardrail_gym.benchmark.spec import BenchmarkEnvironment, BenchmarkSpec, ScenarioSpec
+from guardrail_gym.benchmark.scenarios import ScenarioSpec
+from guardrail_gym.benchmark.spec import BenchmarkEnvironment, BenchmarkSpec, load_regulated_v2_scenarios
 
-__all__ = ["BenchmarkEnvironment", "BenchmarkSpec", "ScenarioSpec"]
+__all__ = [
+    "ScenarioSpec",
+    "BenchmarkEnvironment",
+    "BenchmarkSpec",
+    "load_regulated_v2_scenarios",
+]
