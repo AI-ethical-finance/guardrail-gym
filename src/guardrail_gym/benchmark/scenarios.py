@@ -90,3 +90,9 @@ class ScenarioSpec(BaseModel):
 
     def effective_environment(self):
         return self.environment or self.metadata.get("environment")
+
+    def effective_deployment_profile(self):
+        return self.deployment_profile or self.metadata.get("deployment_profile")
+
+    def effective_data_sensitivity(self):
+        return self.data_sensitivity or self.metadata.get("data_sensitivity")
