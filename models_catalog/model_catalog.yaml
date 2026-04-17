@@ -1,0 +1,188 @@
+version: "0.1"
+models:
+  - key: nemotron_3_nano_30b_a3b
+    aliases: ["nvidia nemotron 3 nano"]
+    provider: nvidia
+    class: open_weight
+    family: nemotron
+    size_label: "30B A3B"
+    deployment_modes: [self_hosted, enterprise_gpu]
+    precision_profiles: [bf16, fp8, int8, int4]
+    cost_tier: medium
+    edge_feasibility: medium
+
+  - key: nemotron_cascade_2_30b_a3b
+    aliases: ["nvidia nemotron cascade 2"]
+    provider: nvidia
+    class: open_weight
+    family: nemotron
+    size_label: "30B A3B"
+    deployment_modes: [self_hosted, enterprise_gpu]
+    precision_profiles: [bf16, fp8, int8, int4]
+    cost_tier: medium
+    edge_feasibility: low
+
+  - key: nemotron_3_super_120b_a12b
+    aliases: ["nvidia nemotron 3 super"]
+    provider: nvidia
+    class: open_weight
+    family: nemotron
+    size_label: "120B A12B"
+    deployment_modes: [self_hosted, enterprise_gpu]
+    precision_profiles: [bf16, fp8, int8]
+    cost_tier: high
+    edge_feasibility: very_low
+
+  - key: mistral_small_4
+    aliases: ["mistral small 4"]
+    provider: mistral
+    class: open_or_self_hosted
+    family: mistral
+    size_label: "119B / 6.5B active"
+    deployment_modes: [self_hosted, api]
+    precision_profiles: [bf16, fp8, int8, int4]
+    cost_tier: medium
+    edge_feasibility: low
+
+  - key: ministral_3_3b
+    aliases: ["ministral 3B"]
+    provider: mistral
+    class: edge_friendly
+    family: mistral
+    size_label: "3B"
+    deployment_modes: [edge, self_hosted]
+    precision_profiles: [bf16, int8, int4]
+    cost_tier: low
+    edge_feasibility: high
+
+  - key: gemma_4_26b_a4b
+    aliases: ["gemma 4 26B"]
+    provider: google
+    class: open_weight
+    family: gemma
+    size_label: "26B A4B"
+    deployment_modes: [self_hosted]
+    precision_profiles: [bf16, int8, int4]
+    cost_tier: medium
+    edge_feasibility: low
+
+  - key: gemma_4_e4b
+    aliases: ["gemma 4 E4B"]
+    provider: google
+    class: open_weight
+    family: gemma
+    size_label: "E4B"
+    deployment_modes: [edge, self_hosted]
+    precision_profiles: [bf16, int8, int4]
+    cost_tier: low
+    edge_feasibility: high
+
+  - key: qwen3_4b
+    aliases: ["Qwen3-4B"]
+    provider: alibaba
+    class: open_weight
+    family: qwen
+    size_label: "4B"
+    deployment_modes: [edge, self_hosted]
+    precision_profiles: [bf16, int8, int4]
+    cost_tier: low
+    edge_feasibility: high
+
+  - key: qwen3_5_27b
+    aliases: ["qwen3.5-27B"]
+    provider: alibaba
+    class: open_weight
+    family: qwen
+    size_label: "27B"
+    deployment_modes: [self_hosted]
+    precision_profiles: [bf16, fp8, int8, int4]
+    cost_tier: medium
+    edge_feasibility: low
+
+  - key: qwen3_5_35b_a3b
+    aliases: ["qwen 3.5 35 b"]
+    provider: alibaba
+    class: open_weight
+    family: qwen
+    size_label: "35B A3B"
+    deployment_modes: [self_hosted, hosted_inference]
+    precision_profiles: [bf16, fp8, int8, int4]
+    cost_tier: medium
+    edge_feasibility: low
+
+  - key: qwen3_next_80b_a3b
+    aliases: ["qwen 3 next 80B"]
+    provider: alibaba
+    class: open_weight
+    family: qwen
+    size_label: "80B A3B"
+    deployment_modes: [self_hosted, hosted_inference]
+    precision_profiles: [bf16, fp8, int8]
+    cost_tier: high
+    edge_feasibility: very_low
+
+  - key: mercury_2
+    aliases: ["mercury 2"]
+    provider: inception
+    class: api
+    family: mercury
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: medium
+    edge_feasibility: none
+
+  - key: gpt_5_4
+    aliases: ["open ai models", "gpt-5.4"]
+    provider: openai
+    class: api
+    family: gpt
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: high
+    edge_feasibility: none
+
+  - key: gpt_5_4_mini
+    aliases: ["gpt-5.4 mini"]
+    provider: openai
+    class: api
+    family: gpt
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: medium
+    edge_feasibility: none
+
+  - key: gpt_4_1
+    aliases: ["gpt-4.1"]
+    provider: openai
+    class: api
+    family: gpt
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: medium
+    edge_feasibility: none
+
+  - key: gemini_3_1_pro_preview
+    aliases: ["google models", "gemini 3.1 pro"]
+    provider: google
+    class: api
+    family: gemini
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: high
+    edge_feasibility: none
+
+  - key: gemini_2_5_flash
+    aliases: ["gemini 2.5 flash"]
+    provider: google
+    class: api
+    family: gemini
+    size_label: "api"
+    deployment_modes: [api]
+    precision_profiles: [managed]
+    cost_tier: medium
+    edge_feasibility: none

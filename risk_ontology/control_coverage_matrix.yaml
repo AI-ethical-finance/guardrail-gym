@@ -1,0 +1,94 @@
+version: "0.1"
+controls:
+  regex_denylist:
+    functions: [constraint]
+    covers:
+      privacy_protection: 0.4
+      jailbreak_resistance: 0.6
+      abuse_handling: 0.1
+
+  schema_validator:
+    functions: [constraint, evidence]
+    covers:
+      auditability: 0.5
+      action_safety: 0.4
+      disclosure_structure: 0.3
+
+  phi_detector:
+    functions: [detection, constraint]
+    covers:
+      privacy_protection: 0.9
+      health_data_sensitivity: 0.8
+      abuse_handling: 0.2
+
+  medical_urgency_classifier:
+    functions: [detection, escalation]
+    covers:
+      medical_urgency: 0.95
+      chronic_illness: 0.65
+      low_health_literacy: 0.4
+      mental_health_escalation: 0.3
+
+  financial_vulnerability_classifier:
+    functions: [detection, adaptation]
+    covers:
+      debt_stress: 0.9
+      bereavement: 0.55
+      retirement_transition: 0.5
+      low_financial_literacy: 0.6
+      low_emotional_resilience: 0.5
+
+  policy_compliance_judge:
+    functions: [adaptation, evidence]
+    covers:
+      disclosure_structure: 0.8
+      fairness_risk: 0.6
+      vulnerable_customer: 0.5
+      privacy_protection: 0.4
+
+  grounding_judge:
+    functions: [evidence]
+    covers:
+      unsupported_claims: 0.85
+      uncertainty_communication: 0.5
+      action_safety: 0.35
+
+  policy_graph_router:
+    functions: [adaptation, constraint, escalation]
+    covers:
+      abuse_handling: 0.7
+      medical_urgency: 0.65
+      retirement_transition: 0.5
+      overreliance_risk: 0.6
+      support_network_fragility: 0.5
+
+  tool_approval_graph:
+    functions: [constraint, evidence]
+    covers:
+      action_safety: 0.9
+      privacy_protection: 0.4
+      coercion_detection: 0.35
+
+  adaptive_risk_controller:
+    functions: [detection, adaptation, escalation]
+    covers:
+      low_emotional_resilience: 0.7
+      low_support_network: 0.55
+      domestic_violence_or_coercive_control: 0.45
+      mental_health_condition: 0.55
+      overreliance_risk: 0.7
+
+  human_escalation_gate:
+    functions: [escalation, evidence]
+    covers:
+      abuse_handling: 0.9
+      medical_urgency: 0.75
+      mental_health_escalation: 0.8
+      retirement_transition: 0.35
+      bereavement: 0.45
+
+  audit_logger:
+    functions: [evidence]
+    covers:
+      auditability: 0.95
+      accountability: 0.85

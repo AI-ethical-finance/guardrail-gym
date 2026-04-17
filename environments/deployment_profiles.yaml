@@ -1,0 +1,64 @@
+version: "0.1"
+deployment_profiles:
+  - key: api_hosted
+    description: Managed inference via external API.
+    priorities:
+      latency: medium
+      cost: medium
+      auditability: medium
+      privacy_constraints: medium
+
+  - key: enterprise_gpu
+    description: Self-hosted on enterprise GPU infrastructure.
+    priorities:
+      latency: medium
+      cost: medium
+      auditability: high
+      privacy_constraints: high
+
+  - key: single_gpu_budget
+    description: Constrained self-hosted deployment on limited hardware.
+    priorities:
+      latency: high
+      cost: high
+      auditability: medium
+      privacy_constraints: high
+
+  - key: edge_device
+    description: On-device or near-edge deployment.
+    priorities:
+      latency: high
+      cost: high
+      auditability: low
+      privacy_constraints: high
+
+quantization_profiles:
+  - key: bf16
+    feasibility: baseline
+    latency_modifier: 1.0
+    cost_modifier: 1.0
+    quality_modifier: 1.0
+
+  - key: fp8
+    feasibility: conditional
+    latency_modifier: 0.85
+    cost_modifier: 0.85
+    quality_modifier: 0.97
+
+  - key: int8
+    feasibility: common
+    latency_modifier: 0.75
+    cost_modifier: 0.7
+    quality_modifier: 0.93
+
+  - key: int4
+    feasibility: selective
+    latency_modifier: 0.6
+    cost_modifier: 0.55
+    quality_modifier: 0.86
+
+  - key: managed
+    feasibility: provider_managed
+    latency_modifier: 1.0
+    cost_modifier: 1.0
+    quality_modifier: 1.0
