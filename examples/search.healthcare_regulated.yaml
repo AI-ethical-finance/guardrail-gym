@@ -47,3 +47,5 @@ generations: 10
 elite_k: 5
 seed: 21
 risk_domain_weight: 0.1
+stack_order_weight: 0.08
+layer_diversity_weight: 0.04

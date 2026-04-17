@@ -15,6 +15,7 @@ from guardrail_gym.search.risk_objectives import (
     deployment_penalty,
 )
 from guardrail_gym.search.risk_domain_coverage import compute_risk_domain_coverage
+from guardrail_gym.search.stack_scoring import score_stack_order, score_layer_diversity
 
 
 def _load_model_catalog() -> dict:
@@ -80,6 +81,9 @@ def evaluate_genotype(genotype: Genotype, benchmark, environment_name: str, conf
     )
 
     # deployment feasibility
+    stack_info = score_stack_order(genotype.control_layers)
+    layer_diversity = score_layer_diversity(genotype.control_layers)
+
     model_record = _lookup_model_record(genotype.base_model)
     deployment_profile = config.get("deployment_profile", "api_hosted")
     quantization_profile = config.get("quantization_profile", "managed")

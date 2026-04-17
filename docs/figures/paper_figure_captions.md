@@ -23,3 +23,9 @@ Performance of model-conditioned winning stacks, showing tradeoffs between overa
 
 ## Figure 8 — Control Motifs in Winning Stacks
 Frequency with which each guardrail primitive appears in the best evolved stacks. This summarizes which controls act as recurring “compliance motifs” across regulated conversational environments.
+
+## Figure 9 — Stack Quality by Environment
+Stack-order score of the best evolved architecture in each regulated environment. Higher values indicate more functionally coherent layering, rewarding architectures that detect, interpret, constrain, verify, escalate, and audit in an order consistent with conversational risk management.
+
+## Figure 10 — Layer Diversity in Winning Stacks
+Number and spread of distinct layers used by the best evolved architecture in each environment. This figure illustrates that higher-risk environments tend to require more functionally diverse compliance stacks.
