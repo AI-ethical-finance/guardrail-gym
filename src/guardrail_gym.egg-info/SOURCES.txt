@@ -30,6 +30,7 @@ src/guardrail_gym/eval/metrics.py
 src/guardrail_gym/eval/reports.py
 src/guardrail_gym/eval/runner.py
 src/guardrail_gym/eval/simulation.py
+src/guardrail_gym/eval/vulnerability_metrics.py
 src/guardrail_gym/evoguard/__init__.py
 src/guardrail_gym/evoguard/schemas.py
 src/guardrail_gym/evoguard/search.py
@@ -46,6 +47,7 @@ src/guardrail_gym/search/fitness.py
 src/guardrail_gym/search/genotype.py
 src/guardrail_gym/search/mutations.py
 src/guardrail_gym/search/pareto.py
+src/guardrail_gym/search/risk_objectives.py
 tests/test_benchmark_expansion.py
 tests/test_benchmark_runner.py
 tests/test_smoke.py

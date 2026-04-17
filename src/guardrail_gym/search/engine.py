@@ -10,19 +10,31 @@ from guardrail_gym.controls.registry import list_controls
 from guardrail_gym.search.crossover import crossover
 from guardrail_gym.search.fitness import evaluate_genotype
 from guardrail_gym.search.genotype import Genotype
-from guardrail_gym.search.mutations import mutate_add_control, mutate_remove_control, mutate_threshold, mutate_topology
+from guardrail_gym.search.mutations import (
+    mutate_add_control,
+    mutate_remove_control,
+    mutate_threshold,
+    mutate_topology,
+)
 from guardrail_gym.search.pareto import pareto_front
+
 
 class EvoGuardSearchEngine:
     def __init__(self, benchmark, config: dict):
         self.benchmark = benchmark
         self.config = config
-        self.available_controls = [c.key for c in list_controls()]
-        self.base_models = config.get("base_models", ["mock-llm"])
+        self.available_controls = config.get(
+            "allowed_controls",
+            [c.key for c in list_controls()],
+        )
+        self.base_models = config.get(
+            "candidate_models",
+            config.get("base_models", ["mock-llm"]),
+        )
         self.population_size = config.get("population_size", 12)
         self.generations = config.get("generations", 8)
         self.elite_k = config.get("elite_k", 4)
-        self.environment_name = config["environment"]
+        self.environment_name = config.get("environment_name", config.get("environment"))
         self.seed = config.get("seed", 7)
         random.seed(self.seed)
 
@@ -57,19 +69,28 @@ class EvoGuardSearchEngine:
             return mutate_threshold(genotype)
         return mutate_topology(genotype)
 
+    def _score_population(self, population: list[Genotype]) -> list[dict]:
+        return [
+            evaluate_genotype(g, self.benchmark, self.environment_name, self.config)
+            for g in population
+        ]
+
     def run(self, output_path: str | None = None) -> dict:
         population = self.initial_population()
         history = []
 
         for generation in range(self.generations):
-            scored = [evaluate_genotype(g, self.benchmark, self.environment_name) for g in population]
+            scored = self._score_population(population)
             scored = sorted(scored, key=lambda x: x["objective"], reverse=True)
             elites = scored[: self.elite_k]
-            history.append({
-                "generation": generation,
-                "best": elites[0],
-                "population": scored,
-            })
+
+            history.append(
+                {
+                    "generation": generation,
+                    "best": elites[0],
+                    "population": scored,
+                }
+            )
 
             next_population = [Genotype(**elite["genotype"]) for elite in elites]
 
@@ -82,7 +103,7 @@ class EvoGuardSearchEngine:
 
             population = next_population
 
-        final_scored = [evaluate_genotype(g, self.benchmark, self.environment_name) for g in population]
+        final_scored = self._score_population(population)
         final_scored = sorted(final_scored, key=lambda x: x["objective"], reverse=True)
         front = pareto_front(final_scored, ["safety", "compliance", "utility"])
 
