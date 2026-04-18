@@ -1,4 +1,4 @@
-from guardrail_gym.models.adapters import BaseModelAdapter, ModelResponse
-from guardrail_gym.models.mock_adapter import MockAdapter
+from guardrail_gym.models.base import BaseModelAdapter, ModelResponse
+from guardrail_gym.models.factory import get_model_adapter
 
-__all__ = ["BaseModelAdapter", "ModelResponse", "MockAdapter"]
+__all__ = ["BaseModelAdapter", "ModelResponse", "get_model_adapter"]

@@ -8,8 +8,13 @@ class MockModelAdapter(BaseModelAdapter):
         self.model_name = model_name
 
     def generate(self, prompt: str, system_prompt: str | None = None) -> ModelResponse:
+        prefix = "[MOCK RESPONSE]"
+        if system_prompt:
+            text = f"{prefix} SYSTEM={system_prompt} USER={prompt}"
+        else:
+            text = f"{prefix} USER={prompt}"
         return ModelResponse(
-            text=f"[MOCK RESPONSE] {prompt}",
+            text=text,
             raw={"mock": True},
             latency_ms=50.0,
             cost_usd=0.0,

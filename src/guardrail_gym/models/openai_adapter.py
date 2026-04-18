@@ -22,22 +22,27 @@ class OpenAIModelAdapter(BaseModelAdapter):
 
         client = OpenAI(api_key=api_key)
 
-        start = time.time()
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
 
+        start = time.time()
         resp = client.chat.completions.create(
             model=self.model_name,
             messages=messages,
         )
         elapsed = (time.time() - start) * 1000.0
 
-        text = resp.choices[0].message.content if resp.choices else ""
+        text = ""
+        if getattr(resp, "choices", None):
+            text = resp.choices[0].message.content or ""
+
+        raw = resp.model_dump() if hasattr(resp, "model_dump") else {"repr": str(resp)}
+
         return ModelResponse(
-            text=text or "",
-            raw=resp.model_dump() if hasattr(resp, "model_dump") else {"raw": str(resp)},
+            text=text,
+            raw=raw,
             latency_ms=elapsed,
             cost_usd=0.0,
             model_name=self.model_name,
