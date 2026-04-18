@@ -8,7 +8,7 @@ CONFIGS = [
 ]
 
 def main():
-    benchmark = BenchmarkSpec.from_yaml("examples/benchmark.regulated.yaml")
+    benchmark = BenchmarkSpec.from_yaml("examples/benchmark.regulated.search.yaml")
     for cfg, out in CONFIGS:
         engine = EvoGuardSearchEngine.from_yaml(benchmark, cfg)
         payload = engine.run(out)

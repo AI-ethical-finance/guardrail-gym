@@ -1,0 +1,2502 @@
+[
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "input_detection",
+    "synergy": -0.000667,
+    "pair_objective": 0.513533,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0084,
+    "pair_objective": 0.5226,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0084,
+    "pair_objective": 0.5234,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "output_verification",
+    "synergy": 0.0084,
+    "pair_objective": 0.523,
+    "pair_stack_order_score": 0.07
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "escalation",
+    "synergy": 0.0084,
+    "pair_objective": 0.5194,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "input_detection",
+    "synergy": 0.0084,
+    "pair_objective": 0.519,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.000667,
+    "pair_objective": 0.509933,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0084,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "output_verification",
+    "synergy": 0.0124,
+    "pair_objective": 0.5234,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "escalation",
+    "synergy": 0.0116,
+    "pair_objective": 0.519,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "input_detection",
+    "synergy": 0.0084,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0084,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "routing_constraint",
+    "synergy": -0.001467,
+    "pair_objective": 0.510733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "output_verification",
+    "synergy": 0.0124,
+    "pair_objective": 0.5242,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "escalation",
+    "synergy": 0.0116,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "input_detection",
+    "synergy": 0.0084,
+    "pair_objective": 0.5158,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0124,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0124,
+    "pair_objective": 0.5206,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "output_verification",
+    "synergy": 0.002533,
+    "pair_objective": 0.510333,
+    "pair_stack_order_score": -0.005
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "escalation",
+    "synergy": 0.0084,
+    "pair_objective": 0.5126,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "input_detection",
+    "synergy": 0.0084,
+    "pair_objective": 0.5158,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0116,
+    "pair_objective": 0.519,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0116,
+    "pair_objective": 0.5198,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "output_verification",
+    "synergy": 0.0084,
+    "pair_objective": 0.5162,
+    "pair_stack_order_score": -0.015
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_compliance_judge",
+    "layer_b": "escalation",
+    "synergy": 0.002533,
+    "pair_objective": 0.506733,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.712367,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.725033,
+    "pair_stack_order_score": 0.11
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.722233,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.718233,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.718233,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.717833,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.712367,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.718633,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.718633,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.717833,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.718633,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.722233,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.709567,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.719433,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.718633,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.714633,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003999,
+    "pair_objective": 0.722233,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003999,
+    "pair_objective": 0.719433,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.705567,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.711433,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.714633,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003199,
+    "pair_objective": 0.721433,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003199,
+    "pair_objective": 0.718633,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.711433,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.705567,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.603967,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.613033,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.617433,
+    "pair_stack_order_score": 0.12
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.609833,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.609833,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.609433,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.600367,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.613833,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.610233,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.609433,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.610233,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.610233,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.604767,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.611033,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.610233,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.606233,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003999,
+    "pair_objective": 0.610233,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003999,
+    "pair_objective": 0.614633,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.597167,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.603033,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.606233,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003199,
+    "pair_objective": 0.609433,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003199,
+    "pair_objective": 0.613833,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.603033,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.597167,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.496267,
+    "pair_stack_order_score": 0.055
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.505333,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.506133,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.502133,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.502133,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.501733,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.492667,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.501733,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.493467,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.503333,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.498533,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003999,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003999,
+    "pair_objective": 0.503333,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.489467,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.495333,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.498533,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003199,
+    "pair_objective": 0.501733,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003199,
+    "pair_objective": 0.502533,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.495333,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "regex_denylist",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.489467,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.748933,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0,
+    "pair_objective": 0.7616,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.0,
+    "pair_objective": 0.7548,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": 0.0,
+    "pair_objective": 0.7548,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": 0.0,
+    "pair_objective": 0.758,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.752533,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.004,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": 0.0032,
+    "pair_objective": 0.758,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": 0.0,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0,
+    "pair_objective": 0.7624,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.749733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.004,
+    "pair_objective": 0.7596,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": 0.0032,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": -0.0,
+    "pair_objective": 0.7584,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.004,
+    "pair_objective": 0.766,
+    "pair_stack_order_score": 0.12
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.004,
+    "pair_objective": 0.7632,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.749333,
+    "pair_stack_order_score": -0.005
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": -0.0,
+    "pair_objective": 0.7552,
+    "pair_stack_order_score": -0.015
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "input_detection",
+    "synergy": 0.0,
+    "pair_objective": 0.7548,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0032,
+    "pair_objective": 0.7616,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0032,
+    "pair_objective": 0.7588,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "output_verification",
+    "synergy": 0.0,
+    "pair_objective": 0.7516,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "financial_vulnerability_classifier",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.745733,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": 0.002333,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0114,
+    "pair_objective": 0.661,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0114,
+    "pair_objective": 0.6654,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.0114,
+    "pair_objective": 0.6578,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.0114,
+    "pair_objective": 0.6578,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": 0.0114,
+    "pair_objective": 0.661,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.002333,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0114,
+    "pair_objective": 0.6654,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.0154,
+    "pair_objective": 0.6618,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.0146,
+    "pair_objective": 0.661,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": 0.0114,
+    "pair_objective": 0.6618,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0114,
+    "pair_objective": 0.6618,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.001533,
+    "pair_objective": 0.656333,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.0154,
+    "pair_objective": 0.6626,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.0146,
+    "pair_objective": 0.6618,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": 0.0114,
+    "pair_objective": 0.6614,
+    "pair_stack_order_score": 0.025
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0154,
+    "pair_objective": 0.6654,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0154,
+    "pair_objective": 0.6698,
+    "pair_stack_order_score": 0.13
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.005533,
+    "pair_objective": 0.652333,
+    "pair_stack_order_score": -0.005
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.0114,
+    "pair_objective": 0.6582,
+    "pair_stack_order_score": -0.015
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": 0.0114,
+    "pair_objective": 0.6578,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0146,
+    "pair_objective": 0.661,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0146,
+    "pair_objective": 0.6654,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": 0.0114,
+    "pair_objective": 0.6546,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": 0.005533,
+    "pair_objective": 0.648733,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.532833,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0,
+    "pair_objective": 0.5419,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -0.0,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -0.0,
+    "pair_objective": 0.5387,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -0.0,
+    "pair_objective": 0.5387,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.0,
+    "pair_objective": 0.5419,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.532833,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -0.0,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.004,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.0032,
+    "pair_objective": 0.5419,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -0.0,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.0,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.533633,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.004,
+    "pair_objective": 0.5435,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.0032,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.0,
+    "pair_objective": 0.5423,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.004,
+    "pair_objective": 0.5463,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.004,
+    "pair_objective": 0.5471,
+    "pair_stack_order_score": 0.105
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.533233,
+    "pair_stack_order_score": 0.015
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.0,
+    "pair_objective": 0.5391,
+    "pair_stack_order_score": 0.005
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -0.0,
+    "pair_objective": 0.5387,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.0032,
+    "pair_objective": 0.5419,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.0032,
+    "pair_objective": 0.5427,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -0.0,
+    "pair_objective": 0.5355,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_compliance_judge",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.529633,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.097867,
+    "pair_objective": 0.758967,
+    "pair_stack_order_score": -0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.088801,
+    "pair_objective": 0.768033,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.088801,
+    "pair_objective": 0.772433,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.088801,
+    "pair_objective": 0.764833,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.088801,
+    "pair_objective": 0.764833,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.088801,
+    "pair_objective": 0.771633,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.097867,
+    "pair_objective": 0.762567,
+    "pair_stack_order_score": 0.035
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.088801,
+    "pair_objective": 0.776033,
+    "pair_stack_order_score": 0.12
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.084801,
+    "pair_objective": 0.772433,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.085601,
+    "pair_objective": 0.771633,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.088801,
+    "pair_objective": 0.768833,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.088801,
+    "pair_objective": 0.768833,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.098667,
+    "pair_objective": 0.763367,
+    "pair_stack_order_score": 0.045
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.084801,
+    "pair_objective": 0.769633,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.085601,
+    "pair_objective": 0.768833,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.088801,
+    "pair_objective": 0.764833,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.084801,
+    "pair_objective": 0.768833,
+    "pair_stack_order_score": 0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.084801,
+    "pair_objective": 0.773233,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.094667,
+    "pair_objective": 0.755767,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.088801,
+    "pair_objective": 0.761633,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "input_detection",
+    "synergy": -0.088801,
+    "pair_objective": 0.764833,
+    "pair_stack_order_score": -0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.085601,
+    "pair_objective": 0.768033,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "routing_constraint",
+    "synergy": -0.085601,
+    "pair_objective": 0.772433,
+    "pair_stack_order_score": 0.075
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "output_verification",
+    "synergy": -0.088801,
+    "pair_objective": 0.761633,
+    "pair_stack_order_score": -0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "policy_graph_router",
+    "layer_b": "escalation",
+    "synergy": -0.094667,
+    "pair_objective": 0.755767,
+    "pair_stack_order_score": -0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -0.009067,
+    "pair_objective": 0.740067,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.749133,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.745933,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.745933,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.752733,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -0.009067,
+    "pair_objective": 0.743667,
+    "pair_stack_order_score": 0.055
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -1e-06,
+    "pair_objective": 0.753533,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.753533,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.752733,
+    "pair_stack_order_score": 0.085
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": -1e-06,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": -0.009867,
+    "pair_objective": 0.740867,
+    "pair_stack_order_score": 0.02
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.003999,
+    "pair_objective": 0.750733,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.003199,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.745933,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003999,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003999,
+    "pair_objective": 0.750733,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -0.005867,
+    "pair_objective": 0.736867,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -1e-06,
+    "pair_objective": 0.742733,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": -1e-06,
+    "pair_objective": 0.745933,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.003199,
+    "pair_objective": 0.749133,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.003199,
+    "pair_objective": 0.749933,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": -1e-06,
+    "pair_objective": 0.742733,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "financial_vulnerability_classifier",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": -0.005867,
+    "pair_objective": 0.736867,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.002133,
+    "pair_objective": 0.642867,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.011199,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.011199,
+    "pair_objective": 0.652733,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.011199,
+    "pair_objective": 0.648733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "input_detection",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.011199,
+    "pair_objective": 0.648733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.011199,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.002133,
+    "pair_objective": 0.642867,
+    "pair_stack_order_score": 0.01
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.011199,
+    "pair_objective": 0.652733,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.015199,
+    "pair_objective": 0.652733,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "semantic_interpretation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.014399,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.011199,
+    "pair_objective": 0.656333,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.011199,
+    "pair_objective": 0.656333,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.001333,
+    "pair_objective": 0.647267,
+    "pair_stack_order_score": 0.065
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.015199,
+    "pair_objective": 0.657133,
+    "pair_stack_order_score": 0.105
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "routing_constraint",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.014399,
+    "pair_objective": 0.656333,
+    "pair_stack_order_score": 0.095
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.011199,
+    "pair_objective": 0.648733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.015199,
+    "pair_objective": 0.652733,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.015199,
+    "pair_objective": 0.653533,
+    "pair_stack_order_score": 0.06
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.005333,
+    "pair_objective": 0.639667,
+    "pair_stack_order_score": -0.03
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "output_verification",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.011199,
+    "pair_objective": 0.645533,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "input_detection",
+    "synergy": 0.011199,
+    "pair_objective": 0.648733,
+    "pair_stack_order_score": 0.0
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "semantic_interpretation",
+    "synergy": 0.014399,
+    "pair_objective": 0.651933,
+    "pair_stack_order_score": 0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "routing_constraint",
+    "synergy": 0.014399,
+    "pair_objective": 0.652733,
+    "pair_stack_order_score": 0.05
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "output_verification",
+    "synergy": 0.011199,
+    "pair_objective": 0.645533,
+    "pair_stack_order_score": -0.04
+  },
+  {
+    "environment": "finance_consumer",
+    "control_a": "policy_graph_router",
+    "layer_a": "escalation",
+    "control_b": "adaptive_risk_controller",
+    "layer_b": "escalation",
+    "synergy": 0.005333,
+    "pair_objective": 0.639667,
+    "pair_stack_order_score": -0.03
+  }
+]
