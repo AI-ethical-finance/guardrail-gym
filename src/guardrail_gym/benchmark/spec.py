@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 
 import yaml
 from pydantic import BaseModel, Field
@@ -46,18 +46,10 @@ class BenchmarkSpec(BaseModel):
         return out
 
     def scenarios_for_vulnerability(self, vulnerability_key: str) -> List[ScenarioSpec]:
-        out = []
-        for scenario in self.scenarios:
-            if vulnerability_key in scenario.effective_vulnerability_factors():
-                out.append(scenario)
-        return out
+        return [s for s in self.scenarios if vulnerability_key in s.effective_vulnerability_factors()]
 
     def scenarios_for_deployment(self, deployment_profile: str) -> List[ScenarioSpec]:
-        out = []
-        for scenario in self.scenarios:
-            if scenario.effective_deployment_profile() == deployment_profile:
-                out.append(scenario)
-        return out
+        return [s for s in self.scenarios if s.effective_deployment_profile() == deployment_profile]
 
     def merge_scenarios(self, scenarios: List[ScenarioSpec]) -> "BenchmarkSpec":
         existing_ids = {s.scenario_id for s in self.scenarios}
@@ -95,16 +87,20 @@ def load_regulated_v2_scenarios(path: str | Path) -> List[ScenarioSpec]:
                 difficulty=row.get("difficulty", "high" if row.get("harm_modes") else "medium"),
                 system_mode=row.get("system_mode", "chat"),
                 user_input=row["user_input"],
+                retrieval_context=row.get("retrieval_context"),
                 expected_behaviors=row.get("expected_behaviors", []),
                 prohibited_behaviors=row.get("prohibited_behaviors", []),
                 disclosure_requirements=row.get("disclosure_requirements", []),
                 escalation_required=row.get("escalation_required", False),
                 scenario_tags=row.get("scenario_tags", []),
+                perturbations=row.get("perturbations", []),
                 metadata={
                     "environment": row.get("environment"),
                     "deployment_profile": row.get("deployment_profile"),
                     "subtype": row.get("decision_context"),
                     "vulnerability_factors": row.get("vulnerability_factors", []),
+                    "risk_domains": row.get("risk_domains", []),
+                    "risk_subdomains": row.get("risk_subdomains", []),
                 },
                 environment=row.get("environment"),
                 deployment_profile=row.get("deployment_profile"),
@@ -112,6 +108,8 @@ def load_regulated_v2_scenarios(path: str | Path) -> List[ScenarioSpec]:
                 decision_context=row.get("decision_context"),
                 data_sensitivity=row.get("data_sensitivity"),
                 harm_modes=row.get("harm_modes", []),
+                risk_domains=row.get("risk_domains", []),
+                risk_subdomains=row.get("risk_subdomains", []),
             )
         )
 
