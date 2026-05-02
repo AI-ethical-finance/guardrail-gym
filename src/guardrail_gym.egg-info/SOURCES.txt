@@ -37,8 +37,11 @@ src/guardrail_gym/evoguard/schemas.py
 src/guardrail_gym/evoguard/search.py
 src/guardrail_gym/models/__init__.py
 src/guardrail_gym/models/adapters.py
+src/guardrail_gym/models/anthropic_adapter.py
 src/guardrail_gym/models/base.py
 src/guardrail_gym/models/factory.py
+src/guardrail_gym/models/google_adapter.py
+src/guardrail_gym/models/hf_local_adapter.py
 src/guardrail_gym/models/mock.py
 src/guardrail_gym/models/mock_adapter.py
 src/guardrail_gym/models/openai_adapter.py
@@ -46,6 +49,7 @@ src/guardrail_gym/profiles/__init__.py
 src/guardrail_gym/profiles/recommend.py
 src/guardrail_gym/profiles/schemas.py
 src/guardrail_gym/search/__init__.py
+src/guardrail_gym/search/cognitive_coverage.py
 src/guardrail_gym/search/control_catalog.py
 src/guardrail_gym/search/crossover.py
 src/guardrail_gym/search/engine.py

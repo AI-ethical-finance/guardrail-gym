@@ -1,0 +1,6 @@
+ablation,objective,safety,compliance,utility,cognitive_role_coverage,stack_order_score,layer_diversity,controls
+full,1.12928,0.9733333333333337,1.0,0.6661111111111109,,0.375,1.0,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|human_escalation_gate|policy_compliance_judge|policy_graph_router|regex_denylist
+no_layer_mutation,1.096213,0.9733333333333337,0.9449999999999998,0.6561111111111111,,0.33,1.0,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|human_escalation_gate|policy_compliance_judge|policy_graph_router|tool_approval_graph
+no_activation_mutation,1.061602,0.9733333333333337,0.9988888888888889,0.6361111111111113,,0.33,1.0,adaptive_risk_controller|financial_vulnerability_classifier|human_escalation_gate|policy_compliance_judge|policy_graph_router|regex_denylist|tool_approval_graph
+no_structural_mutation,0.785834,0.7366666666666665,0.6594444444444442,0.7561111111111108,,0.12,0.333333,financial_vulnerability_classifier|policy_graph_router
+threshold_only,0.899925,0.7833333333333337,0.8694444444444447,0.746111111111111,,0.145,0.333333,adaptive_risk_controller|financial_vulnerability_classifier|policy_compliance_judge|schema_validator

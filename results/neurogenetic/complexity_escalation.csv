@@ -1,0 +1,6 @@
+complexity_mode,objective,stack_depth,num_controls,layer_diversity,cognitive_role_coverage,stack_order_score,controls
+chat,1.023752,3,5,0.5,,0.145,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|policy_compliance_judge|policy_graph_router
+rag,1.060997,5,7,0.833333,,0.3,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|grounding_judge|policy_compliance_judge|policy_graph_router|schema_validator
+tool_use,1.136064,5,7,0.833333,,0.345,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|policy_compliance_judge|policy_graph_router|regex_denylist|schema_validator
+transactional_agent,1.134664,5,7,0.833333,,0.39,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|policy_compliance_judge|policy_graph_router|regex_denylist|schema_validator
+multi_agent,1.123741,5,6,0.833333,,0.365,adaptive_risk_controller|audit_logger|financial_vulnerability_classifier|policy_compliance_judge|policy_graph_router|regex_denylist

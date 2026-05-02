@@ -66,7 +66,8 @@ class EvoGuardSearchEngine:
         return [self.random_genotype() for _ in range(self.population_size)]
 
     def mutate(self, genotype: Genotype) -> Genotype:
-        op = random.choice(["add", "remove", "threshold", "topology", "layer", "activation"])
+        ops = self.config.get("mutation_ops", ["add", "remove", "threshold", "topology", "layer", "activation"])
+        op = random.choice(ops)
         if op == "add":
             return mutate_add_control(genotype, self.available_controls)
         if op == "remove":

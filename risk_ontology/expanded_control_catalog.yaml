@@ -1,234 +1,449 @@
-version: "0.1"
-
+version: '0.1'
 controls:
-
   regex_denylist:
     family: deterministic
-    functions: [detection, constraint]
+    functions:
+    - detection
+    - constraint
     default_layer: input_detection
     cost_score: 0.05
     latency_score: 0.05
-    coverage_domains: [security_adversarial, privacy_data_governance]
-    activation_modes: [always_on]
-    can_precede: [semantic_interpretation, routing_constraint, generation]
+    coverage_domains:
+    - security_adversarial
+    - privacy_data_governance
+    activation_modes:
+    - always_on
+    can_precede:
+    - semantic_interpretation
+    - routing_constraint
+    - generation
     can_follow: []
-
+    cognitive_roles:
+    - perception
+    - inhibition
   schema_validator:
     family: deterministic
-    functions: [constraint, verification]
+    functions:
+    - constraint
+    - verification
     default_layer: output_verification
     cost_score: 0.08
     latency_score: 0.08
-    coverage_domains: [system_safety_reliability, governance_societal_systemic]
-    activation_modes: [always_on, output_only]
-    can_precede: [escalation, audit_monitoring]
-    can_follow: [generation]
-
+    coverage_domains:
+    - system_safety_reliability
+    - governance_societal_systemic
+    activation_modes:
+    - always_on
+    - output_only
+    can_precede:
+    - escalation
+    - audit_monitoring
+    can_follow:
+    - generation
+    cognitive_roles:
+    - inhibition
+    - metacognition
   phi_detector:
     family: slm
-    functions: [detection, constraint]
+    functions:
+    - detection
+    - constraint
     default_layer: input_detection
     cost_score: 0.15
     latency_score: 0.12
-    coverage_domains: [privacy_data_governance, human_harm_vulnerability]
-    activation_modes: [always_on, healthcare_only]
-    can_precede: [semantic_interpretation, routing_constraint]
+    coverage_domains:
+    - privacy_data_governance
+    - human_harm_vulnerability
+    activation_modes:
+    - always_on
+    - healthcare_only
+    can_precede:
+    - semantic_interpretation
+    - routing_constraint
     can_follow: []
-
+    cognitive_roles:
+    - perception
+    - inhibition
   medical_urgency_classifier:
     family: slm
-    functions: [detection, escalation]
+    functions:
+    - detection
+    - escalation
     default_layer: semantic_interpretation
     cost_score: 0.2
     latency_score: 0.15
-    coverage_domains: [human_harm_vulnerability, system_safety_reliability]
-    activation_modes: [healthcare_only, triggered]
-    can_precede: [routing_constraint, escalation]
-    can_follow: [input_detection]
-
+    coverage_domains:
+    - human_harm_vulnerability
+    - system_safety_reliability
+    activation_modes:
+    - healthcare_only
+    - triggered
+    can_precede:
+    - routing_constraint
+    - escalation
+    can_follow:
+    - input_detection
+    cognitive_roles:
+    - appraisal
+    - social_regulation
   financial_vulnerability_classifier:
     family: slm
-    functions: [detection, adaptation]
+    functions:
+    - detection
+    - adaptation
     default_layer: semantic_interpretation
     cost_score: 0.2
     latency_score: 0.15
-    coverage_domains: [economic_financial_integrity, human_harm_vulnerability]
-    activation_modes: [finance_only, triggered]
-    can_precede: [routing_constraint, output_verification]
-    can_follow: [input_detection]
-
+    coverage_domains:
+    - economic_financial_integrity
+    - human_harm_vulnerability
+    activation_modes:
+    - finance_only
+    - triggered
+    can_precede:
+    - routing_constraint
+    - output_verification
+    can_follow:
+    - input_detection
+    cognitive_roles:
+    - appraisal
   embedding_risk_matcher:
     family: embedding
-    functions: [detection, retrieval]
+    functions:
+    - detection
+    - retrieval
     default_layer: semantic_interpretation
     cost_score: 0.12
     latency_score: 0.1
-    coverage_domains: [security_adversarial, information_integrity]
-    activation_modes: [always_on, triggered]
-    can_precede: [routing_constraint, output_verification]
-    can_follow: [input_detection]
-
+    coverage_domains:
+    - security_adversarial
+    - information_integrity
+    activation_modes:
+    - always_on
+    - triggered
+    can_precede:
+    - routing_constraint
+    - output_verification
+    can_follow:
+    - input_detection
+    cognitive_roles:
+    - perception
+    - appraisal
   policy_compliance_judge:
     family: llm_judge
-    functions: [verification, adaptation]
+    functions:
+    - verification
+    - adaptation
     default_layer: output_verification
     cost_score: 0.45
     latency_score: 0.45
-    coverage_domains: [rights_fairness, governance_societal_systemic, economic_financial_integrity]
-    activation_modes: [always_on, triggered]
-    can_precede: [escalation, audit_monitoring]
-    can_follow: [generation]
-
+    coverage_domains:
+    - rights_fairness
+    - governance_societal_systemic
+    - economic_financial_integrity
+    activation_modes:
+    - always_on
+    - triggered
+    can_precede:
+    - escalation
+    - audit_monitoring
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
   grounding_judge:
     family: llm_judge
-    functions: [verification]
+    functions:
+    - verification
     default_layer: output_verification
     cost_score: 0.4
     latency_score: 0.4
-    coverage_domains: [information_integrity, system_safety_reliability]
-    activation_modes: [rag_only, triggered]
-    can_precede: [escalation, audit_monitoring]
-    can_follow: [generation]
-
+    coverage_domains:
+    - information_integrity
+    - system_safety_reliability
+    activation_modes:
+    - rag_only
+    - triggered
+    can_precede:
+    - escalation
+    - audit_monitoring
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
   clinical_scope_judge:
     family: llm_judge
-    functions: [verification, constraint]
+    functions:
+    - verification
+    - constraint
     default_layer: output_verification
     cost_score: 0.48
     latency_score: 0.42
-    coverage_domains: [human_harm_vulnerability]
-    activation_modes: [healthcare_only, triggered]
-    can_precede: [escalation]
-    can_follow: [generation]
-
+    coverage_domains:
+    - human_harm_vulnerability
+    activation_modes:
+    - healthcare_only
+    - triggered
+    can_precede:
+    - escalation
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
+    - inhibition
   suitability_judge:
     family: llm_judge
-    functions: [verification, constraint]
+    functions:
+    - verification
+    - constraint
     default_layer: output_verification
     cost_score: 0.48
     latency_score: 0.42
-    coverage_domains: [economic_financial_integrity]
-    activation_modes: [finance_only, triggered]
-    can_precede: [escalation]
-    can_follow: [generation]
-
+    coverage_domains:
+    - economic_financial_integrity
+    activation_modes:
+    - finance_only
+    - triggered
+    can_precede:
+    - escalation
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
+    - inhibition
   policy_graph_router:
     family: graph
-    functions: [adaptation, routing, constraint]
+    functions:
+    - adaptation
+    - routing
+    - constraint
     default_layer: routing_constraint
     cost_score: 0.3
     latency_score: 0.22
-    coverage_domains: [human_harm_vulnerability, economic_financial_integrity, governance_societal_systemic]
-    activation_modes: [always_on]
-    can_precede: [generation, escalation]
-    can_follow: [semantic_interpretation, input_detection]
-
+    coverage_domains:
+    - human_harm_vulnerability
+    - economic_financial_integrity
+    - governance_societal_systemic
+    activation_modes:
+    - always_on
+    can_precede:
+    - generation
+    - escalation
+    can_follow:
+    - semantic_interpretation
+    - input_detection
+    cognitive_roles:
+    - executive_control
+    - inhibition
   tool_approval_graph:
     family: graph
-    functions: [constraint, verification]
+    functions:
+    - constraint
+    - verification
     default_layer: routing_constraint
     cost_score: 0.28
     latency_score: 0.22
-    coverage_domains: [security_adversarial, system_safety_reliability]
-    activation_modes: [agentic_only, triggered]
-    can_precede: [generation, escalation]
-    can_follow: [semantic_interpretation]
-
+    coverage_domains:
+    - security_adversarial
+    - system_safety_reliability
+    activation_modes:
+    - agentic_only
+    - triggered
+    can_precede:
+    - generation
+    - escalation
+    can_follow:
+    - semantic_interpretation
+    cognitive_roles:
+    - executive_control
+    - inhibition
   finite_state_router:
     family: graph
-    functions: [routing, constraint]
+    functions:
+    - routing
+    - constraint
     default_layer: routing_constraint
     cost_score: 0.18
     latency_score: 0.12
-    coverage_domains: [governance_societal_systemic, system_safety_reliability]
-    activation_modes: [always_on]
-    can_precede: [generation]
-    can_follow: [semantic_interpretation, input_detection]
-
+    coverage_domains:
+    - governance_societal_systemic
+    - system_safety_reliability
+    activation_modes:
+    - always_on
+    can_precede:
+    - generation
+    can_follow:
+    - semantic_interpretation
+    - input_detection
+    cognitive_roles:
+    - executive_control
   adaptive_risk_controller:
     family: neurosymbolic
-    functions: [detection, adaptation, escalation]
+    functions:
+    - detection
+    - adaptation
+    - escalation
     default_layer: semantic_interpretation
     cost_score: 0.35
     latency_score: 0.28
-    coverage_domains: [human_harm_vulnerability, rights_fairness, governance_societal_systemic]
-    activation_modes: [always_on, triggered]
-    can_precede: [routing_constraint, escalation, output_verification]
-    can_follow: [input_detection]
-
+    coverage_domains:
+    - human_harm_vulnerability
+    - rights_fairness
+    - governance_societal_systemic
+    activation_modes:
+    - always_on
+    - triggered
+    can_precede:
+    - routing_constraint
+    - escalation
+    - output_verification
+    can_follow:
+    - input_detection
+    cognitive_roles:
+    - appraisal
+    - executive_control
+    - social_regulation
   knowledge_graph_grounder:
     family: neurosymbolic
-    functions: [retrieval, verification]
+    functions:
+    - retrieval
+    - verification
     default_layer: output_verification
     cost_score: 0.32
     latency_score: 0.26
-    coverage_domains: [information_integrity, system_safety_reliability]
-    activation_modes: [rag_only, domain_only]
-    can_precede: [escalation, audit_monitoring]
-    can_follow: [generation]
-
+    coverage_domains:
+    - information_integrity
+    - system_safety_reliability
+    activation_modes:
+    - rag_only
+    - domain_only
+    can_precede:
+    - escalation
+    - audit_monitoring
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
   constraint_solver_gate:
     family: neurosymbolic
-    functions: [constraint, verification]
+    functions:
+    - constraint
+    - verification
     default_layer: routing_constraint
     cost_score: 0.26
     latency_score: 0.22
-    coverage_domains: [economic_financial_integrity, governance_societal_systemic]
-    activation_modes: [triggered]
-    can_precede: [generation, escalation]
-    can_follow: [semantic_interpretation]
-
+    coverage_domains:
+    - economic_financial_integrity
+    - governance_societal_systemic
+    activation_modes:
+    - triggered
+    can_precede:
+    - generation
+    - escalation
+    can_follow:
+    - semantic_interpretation
+    cognitive_roles:
+    - executive_control
+    - inhibition
   human_escalation_gate:
     family: human
-    functions: [escalation, verification]
+    functions:
+    - escalation
+    - verification
     default_layer: escalation
     cost_score: 0.6
     latency_score: 0.7
-    coverage_domains: [human_harm_vulnerability, governance_societal_systemic]
-    activation_modes: [triggered]
-    can_precede: [audit_monitoring]
-    can_follow: [output_verification, routing_constraint]
-
+    coverage_domains:
+    - human_harm_vulnerability
+    - governance_societal_systemic
+    activation_modes:
+    - triggered
+    can_precede:
+    - audit_monitoring
+    can_follow:
+    - output_verification
+    - routing_constraint
+    cognitive_roles:
+    - social_regulation
   audit_logger:
     family: system
-    functions: [audit, monitoring]
+    functions:
+    - audit
+    - monitoring
     default_layer: audit_monitoring
     cost_score: 0.08
     latency_score: 0.05
-    coverage_domains: [governance_societal_systemic]
-    activation_modes: [always_on]
+    coverage_domains:
+    - governance_societal_systemic
+    activation_modes:
+    - always_on
     can_precede: []
-    can_follow: [escalation, output_verification, generation, routing_constraint]
-
+    can_follow:
+    - escalation
+    - output_verification
+    - generation
+    - routing_constraint
+    cognitive_roles:
+    - memory_audit
   session_anomaly_monitor:
     family: system
-    functions: [monitoring, detection]
+    functions:
+    - monitoring
+    - detection
     default_layer: audit_monitoring
     cost_score: 0.14
     latency_score: 0.12
-    coverage_domains: [security_adversarial, governance_societal_systemic]
-    activation_modes: [always_on]
+    coverage_domains:
+    - security_adversarial
+    - governance_societal_systemic
+    activation_modes:
+    - always_on
     can_precede: []
-    can_follow: [input_detection, generation, output_verification]
-
+    can_follow:
+    - input_detection
+    - generation
+    - output_verification
+    cognitive_roles:
+    - memory_audit
+    - perception
   uncertainty_calibrator:
     family: behavioral
-    functions: [adaptation, verification]
+    functions:
+    - adaptation
+    - verification
     default_layer: output_verification
     cost_score: 0.1
     latency_score: 0.08
-    coverage_domains: [information_integrity, human_harm_vulnerability]
-    activation_modes: [always_on]
-    can_precede: [escalation, audit_monitoring]
-    can_follow: [generation]
-
+    coverage_domains:
+    - information_integrity
+    - human_harm_vulnerability
+    activation_modes:
+    - always_on
+    can_precede:
+    - escalation
+    - audit_monitoring
+    can_follow:
+    - generation
+    cognitive_roles:
+    - metacognition
   friction_inserter:
     family: behavioral
-    functions: [adaptation, escalation]
+    functions:
+    - adaptation
+    - escalation
     default_layer: escalation
     cost_score: 0.06
     latency_score: 0.05
-    coverage_domains: [economic_financial_integrity, human_harm_vulnerability]
-    activation_modes: [triggered]
-    can_precede: [audit_monitoring]
-    can_follow: [output_verification, routing_constraint]
+    coverage_domains:
+    - economic_financial_integrity
+    - human_harm_vulnerability
+    activation_modes:
+    - triggered
+    can_precede:
+    - audit_monitoring
+    can_follow:
+    - output_verification
+    - routing_constraint
+    cognitive_roles:
+    - social_regulation
+    - inhibition

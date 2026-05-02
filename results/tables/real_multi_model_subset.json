@@ -1,0 +1,110 @@
+[
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "hc_008",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "hc_001",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "hc_002",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "fin_009",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "fin_008",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gpt-4.1",
+    "scenario_id": "fin_002",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: OPENAI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "hc_008",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "hc_001",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "hc_002",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "fin_009",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "fin_008",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "gemini-2.5-flash",
+    "scenario_id": "fin_002",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: GOOGLE_API_KEY or GEMINI_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "hc_008",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "hc_001",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "hc_002",
+    "environment": "healthcare_strict",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "fin_009",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "fin_008",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "scenario_id": "fin_002",
+    "environment": "finance_consumer",
+    "error": "RuntimeError: ANTHROPIC_API_KEY not set"
+  }
+]

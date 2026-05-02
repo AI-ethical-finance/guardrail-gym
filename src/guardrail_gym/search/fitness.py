@@ -14,6 +14,7 @@ from guardrail_gym.search.risk_objectives import (
     deployment_penalty,
 )
 from guardrail_gym.search.stack_scoring import score_stack_order, score_layer_diversity
+from guardrail_gym.search.cognitive_coverage import cognitive_role_payload
 
 
 def _load_model_catalog() -> dict:
@@ -82,6 +83,7 @@ def evaluate_genotype(genotype: Genotype, benchmark, environment_name: str, conf
     risk_domain_coverage = compute_risk_domain_coverage(genotype.controls, risk_domains)
 
     stack_info = score_stack_order(genotype.control_layers)
+    cognitive_info = cognitive_role_payload(genotype.controls, environment_name)
     layer_diversity = score_layer_diversity(genotype.control_layers)
 
     model_record = _lookup_model_record(genotype.base_model)
@@ -107,6 +109,7 @@ def evaluate_genotype(genotype: Genotype, benchmark, environment_name: str, conf
         + (config.get("risk_domain_weight", 0.10) * risk_domain_coverage)
         + (config.get("stack_order_weight", 0.08) * stack_info["stack_order_score"])
         + (config.get("layer_diversity_weight", 0.04) * layer_diversity)
+        + (config.get("cognitive_role_weight", 0.10) * cognitive_info["cognitive_role_coverage"])
         + (config.get("deployment_feasibility_weight", 0.06) * dep["deployment_feasibility"])
         + (config.get("quantization_feasibility_weight", 0.04) * dep["quantization_feasibility"])
         - (config.get("deployment_cost_weight", 0.08) * dep["deployment_cost_penalty"])

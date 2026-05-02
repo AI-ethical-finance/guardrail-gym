@@ -1,0 +1,30 @@
+version: "0.1"
+
+roles:
+  perception:
+    description: Detect surface-level or early risk signals.
+    canonical_layers: [input_detection]
+
+  appraisal:
+    description: Interpret intent, vulnerability, domain, and risk context.
+    canonical_layers: [semantic_interpretation]
+
+  inhibition:
+    description: Block, constrain, refuse, or prevent unsafe action.
+    canonical_layers: [input_detection, routing_constraint, output_verification]
+
+  executive_control:
+    description: Route, plan, sequence, and govern policy-compliant behavior.
+    canonical_layers: [routing_constraint]
+
+  metacognition:
+    description: Judge, verify, calibrate, and self-check outputs.
+    canonical_layers: [output_verification]
+
+  social_regulation:
+    description: Escalate, hand off, slow down, or involve human review.
+    canonical_layers: [escalation]
+
+  memory_audit:
+    description: Preserve traceability, monitor sessions, and support accountability.
+    canonical_layers: [audit_monitoring]
